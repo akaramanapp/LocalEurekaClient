@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EurekaClientApplication {
 
-	@RequestMapping("/")
-	public String home() {
-		return "Hello world";
+	@RequestMapping("/product")
+	public String getProduct() {
+		return "Product endpoint";
+	}
+
+	@RequestMapping("/customer")
+	public String getCustomer() {
+		return "Customer endpoint";
 	}
 
 	public static void main(String[] args) {

@@ -7,5 +7,6 @@ eureka:
     serviceUrl:
       defaultZone: https://localeurekaserver.herokuapp.com/eureka/
 spring:
+  profiles: heroku
   application:
     name: micro-app-eureka-client
